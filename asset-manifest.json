@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/lostark-trainer/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/lostark-trainer/static/js/main.fe35e0ea.chunk.js",
-    "main.js.map": "/lostark-trainer/static/js/main.fe35e0ea.chunk.js.map",
-    "runtime-main.js": "/lostark-trainer/static/js/runtime-main.a87b3995.js",
-    "runtime-main.js.map": "/lostark-trainer/static/js/runtime-main.a87b3995.js.map",
-    "static/js/2.daac7eb2.chunk.js": "/lostark-trainer/static/js/2.daac7eb2.chunk.js",
-    "static/js/2.daac7eb2.chunk.js.map": "/lostark-trainer/static/js/2.daac7eb2.chunk.js.map",
-    "static/js/3.591a6e41.chunk.js": "/lostark-trainer/static/js/3.591a6e41.chunk.js",
-    "static/js/3.591a6e41.chunk.js.map": "/lostark-trainer/static/js/3.591a6e41.chunk.js.map",
+    "main.css": "/lostark-trainer/static/css/main.bd5dad19.chunk.css",
+    "main.js": "/lostark-trainer/static/js/main.25d28888.chunk.js",
+    "main.js.map": "/lostark-trainer/static/js/main.25d28888.chunk.js.map",
+    "runtime-main.js": "/lostark-trainer/static/js/runtime-main.fe6b0506.js",
+    "runtime-main.js.map": "/lostark-trainer/static/js/runtime-main.fe6b0506.js.map",
+    "static/js/2.615535d0.chunk.js": "/lostark-trainer/static/js/2.615535d0.chunk.js",
+    "static/js/2.615535d0.chunk.js.map": "/lostark-trainer/static/js/2.615535d0.chunk.js.map",
+    "static/js/3.5815f45d.chunk.js": "/lostark-trainer/static/js/3.5815f45d.chunk.js",
+    "static/js/3.5815f45d.chunk.js.map": "/lostark-trainer/static/js/3.5815f45d.chunk.js.map",
     "index.html": "/lostark-trainer/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/lostark-trainer/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.daac7eb2.chunk.js.LICENSE.txt": "/lostark-trainer/static/js/2.daac7eb2.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/lostark-trainer/static/media/logo.6ce24c58.svg"
+    "static/css/main.bd5dad19.chunk.css.map": "/lostark-trainer/static/css/main.bd5dad19.chunk.css.map",
+    "static/js/2.615535d0.chunk.js.LICENSE.txt": "/lostark-trainer/static/js/2.615535d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a87b3995.js",
-    "static/js/2.daac7eb2.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.fe35e0ea.chunk.js"
+    "static/js/runtime-main.fe6b0506.js",
+    "static/js/2.615535d0.chunk.js",
+    "static/css/main.bd5dad19.chunk.css",
+    "static/js/main.25d28888.chunk.js"
   ]
 }
