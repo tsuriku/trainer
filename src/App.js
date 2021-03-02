@@ -4,14 +4,14 @@ import React, { Component } from 'react';
 // import ThemeFormContainer from "containers/ThemeFormContainer";
 import { Route } from "react-router-dom";
 import {
-  ViakissKeybordPattern
+  ViakissKeyboardPattern
 } from "pages";
 
 class App extends Component {
   render() {
     return (
       <>
-        <Route path="/" component={ViakissKeybordPattern} />
+        <Route path="/" component={ViakissKeyboardPattern} />
       </>
     );
   }
