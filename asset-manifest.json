@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lostark-trainer/static/css/main.d6e0f5f2.chunk.css",
-    "main.js": "/lostark-trainer/static/js/main.bc4cad65.chunk.js",
-    "main.js.map": "/lostark-trainer/static/js/main.bc4cad65.chunk.js.map",
+    "main.js": "/lostark-trainer/static/js/main.cb5e3416.chunk.js",
+    "main.js.map": "/lostark-trainer/static/js/main.cb5e3416.chunk.js.map",
     "runtime-main.js": "/lostark-trainer/static/js/runtime-main.65fd9bbc.js",
     "runtime-main.js.map": "/lostark-trainer/static/js/runtime-main.65fd9bbc.js.map",
     "static/js/2.5d092b64.chunk.js": "/lostark-trainer/static/js/2.5d092b64.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.65fd9bbc.js",
     "static/js/2.5d092b64.chunk.js",
     "static/css/main.d6e0f5f2.chunk.css",
-    "static/js/main.bc4cad65.chunk.js"
+    "static/js/main.cb5e3416.chunk.js"
   ]
 }
