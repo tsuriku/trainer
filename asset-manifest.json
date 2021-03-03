@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lostark-trainer/static/css/main.bd5dad19.chunk.css",
-    "main.js": "/lostark-trainer/static/js/main.25d28888.chunk.js",
-    "main.js.map": "/lostark-trainer/static/js/main.25d28888.chunk.js.map",
-    "runtime-main.js": "/lostark-trainer/static/js/runtime-main.fe6b0506.js",
-    "runtime-main.js.map": "/lostark-trainer/static/js/runtime-main.fe6b0506.js.map",
-    "static/js/2.615535d0.chunk.js": "/lostark-trainer/static/js/2.615535d0.chunk.js",
-    "static/js/2.615535d0.chunk.js.map": "/lostark-trainer/static/js/2.615535d0.chunk.js.map",
-    "static/js/3.5815f45d.chunk.js": "/lostark-trainer/static/js/3.5815f45d.chunk.js",
-    "static/js/3.5815f45d.chunk.js.map": "/lostark-trainer/static/js/3.5815f45d.chunk.js.map",
+    "main.css": "/lostark-trainer/static/css/main.d6e0f5f2.chunk.css",
+    "main.js": "/lostark-trainer/static/js/main.bc4cad65.chunk.js",
+    "main.js.map": "/lostark-trainer/static/js/main.bc4cad65.chunk.js.map",
+    "runtime-main.js": "/lostark-trainer/static/js/runtime-main.65fd9bbc.js",
+    "runtime-main.js.map": "/lostark-trainer/static/js/runtime-main.65fd9bbc.js.map",
+    "static/js/2.5d092b64.chunk.js": "/lostark-trainer/static/js/2.5d092b64.chunk.js",
+    "static/js/2.5d092b64.chunk.js.map": "/lostark-trainer/static/js/2.5d092b64.chunk.js.map",
+    "static/js/3.0c332c65.chunk.js": "/lostark-trainer/static/js/3.0c332c65.chunk.js",
+    "static/js/3.0c332c65.chunk.js.map": "/lostark-trainer/static/js/3.0c332c65.chunk.js.map",
     "index.html": "/lostark-trainer/index.html",
-    "static/css/main.bd5dad19.chunk.css.map": "/lostark-trainer/static/css/main.bd5dad19.chunk.css.map",
-    "static/js/2.615535d0.chunk.js.LICENSE.txt": "/lostark-trainer/static/js/2.615535d0.chunk.js.LICENSE.txt"
+    "static/css/main.d6e0f5f2.chunk.css.map": "/lostark-trainer/static/css/main.d6e0f5f2.chunk.css.map",
+    "static/js/2.5d092b64.chunk.js.LICENSE.txt": "/lostark-trainer/static/js/2.5d092b64.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe6b0506.js",
-    "static/js/2.615535d0.chunk.js",
-    "static/css/main.bd5dad19.chunk.css",
-    "static/js/main.25d28888.chunk.js"
+    "static/js/runtime-main.65fd9bbc.js",
+    "static/js/2.5d092b64.chunk.js",
+    "static/css/main.d6e0f5f2.chunk.css",
+    "static/js/main.bc4cad65.chunk.js"
   ]
 }
