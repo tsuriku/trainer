@@ -5,16 +5,13 @@ import classNames from "classnames/bind";
 const cx = classNames.bind(styles)
 
 const ViakissKeyboardPattern = ({
-    keyboard,
-    timer,
+    keyboardPattern,
 }) => {
     return (
         <div className={cx("viakiss-keyboard-pattern-template")}>
-            <div className={cx("keyboard")}>
-                {keyboard}
-            </div>
-            <div className={cx("timer")}>
-                {timer}
+
+            <div className={cx("keyboard-pattern")}>
+                {keyboardPattern}
             </div>
         </div>
     )

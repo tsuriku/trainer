@@ -1,3 +1,4 @@
+import { PatternView } from "components/KeyboardPattern";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import ViakissKeyboardPatternTemplate from "templates/ViakissKeyboardPattern"
@@ -8,8 +9,7 @@ class ViakissKeyboardPatternContainer extends Component {
     render() {
         return <>
             <ViakissKeyboardPatternTemplate
-                keyboard={"키보드 모양"}
-                timer={"타이머"}
+                keyboardPattern={<PatternView />}
             />
         </>
     }
