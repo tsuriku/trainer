@@ -33,6 +33,10 @@ class PatternView extends Component {
         patterns: "QWEASD",
         textLength: 8,
         maxTime: 4000,
+        onSuccess: (durationTime) => {
+        },
+        onFailure: () => {
+        },
     }
 
     state = {
@@ -64,6 +68,22 @@ class PatternView extends Component {
     }
 
     resetPatterns = () => {
+        const { items } = this.state
+        const newItems = items.map((item, index) => {
+            return PatternData({
+                text: item.text,
+                state: index === 0 ? "current" : "ready",
+            })
+        })
+
+        this.setState({
+            ...this.state,
+            items: newItems,
+            inputCount: 0
+        })
+    }
+
+    makePatterns = () => {
         const { patterns, textLength } = this.props
 
         const list = []
@@ -82,13 +102,17 @@ class PatternView extends Component {
     }
 
     handleResult = (clear) => {
+        const { maxTime, onSuccess, onFailure } = this.props
+        const { remainTime } = this.state
         if (clear) {
+            onSuccess(maxTime - remainTime)
             this.setState({
                 ...this.state,
                 result: "success",
             })
         }
         else {
+            onFailure()
             this.setState({
                 ...this.state,
                 result: "failure",
@@ -123,13 +147,13 @@ class PatternView extends Component {
                     })
                 }
             } else {
-                this.handleResult(false)
+                this.resetPatterns()
             }
         }
     }
 
     handleStart = () => {
-        this.resetPatterns()
+        this.makePatterns()
 
         this.startTime = Date.now()
         this.timeFlag = false
@@ -138,7 +162,7 @@ class PatternView extends Component {
             const { maxTime } = this.props
             const now = Date.now()
             if (this.startTime + maxTime <= now) {
-                this.handleStop()
+                this.handleResult(false)
             }
             else {
                 this.setState({
@@ -146,7 +170,7 @@ class PatternView extends Component {
                     remainTime: now - this.startTime,
                 })
             }
-        }, 50);
+        }, 10);
 
         this.setState({
             ...this.state,
@@ -171,7 +195,7 @@ class PatternView extends Component {
         const { patterns } = this.props
         const { run } = this.state
         const input = String.fromCharCode(e.keyCode).toUpperCase()
-        if (patterns.includes(input)) {
+        if (patterns.indexOf(input) >= 0) {
             this.handlePatternCheck(input)
         }
         else if (input === " ") {
@@ -202,7 +226,6 @@ class PatternView extends Component {
                 item={item}
             />
         })
-
         return list
     }
 
