@@ -1,0 +1,61 @@
+.pattern-view-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .key-patterns{
+        flex-direction: row;
+        display: flex;
+
+        .pattern{
+            width:60px;
+            height: 60px;
+            font-size:28px; 
+            align-items: center;
+            justify-content: center;
+            display:flex; 
+            margin:5px; 
+
+            &.ready{
+                color:#404040; 
+                background-color:white; 
+                border:solid 4px #404040;
+            }
+
+            &.success{
+                background-color:#808080;  
+                border:solid 4px #404040;
+            }
+
+            &.current{
+                color:#fcc419; 
+                background-color:white; 
+                border:solid 4px #fcc419;
+            }
+        }
+    }
+
+    .timer-progress{
+        width:400px;
+        margin-top:30px;
+    }
+
+    .message{
+        position: absolute;
+        display: flex;
+        top:100%;
+        margin-top:40px;
+        font-size:18px;
+        font-weight: 500;
+        color:white;
+
+        &.success{
+            color:#1c7ed6
+        }
+
+        &.failure{
+            color:#f03e3e
+        }
+    }
+}
