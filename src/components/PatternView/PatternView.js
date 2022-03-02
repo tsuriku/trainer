@@ -61,11 +61,10 @@ export const PatternView = (props) => {
     }, []);
     
     useEffect(() => {
-        if (run) {
-            stop();
-        }
-    }, [maxTime, stop, run]);
-
+        stop();
+        makePatterns();
+    }, [textLength, stop, makePatterns]);
+  
     const handleResult = useCallback((clear) => {
         if (clear) {
             setResult("success");
