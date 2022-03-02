@@ -13,7 +13,8 @@ export const App = () => {
         textLength={textLength}
       />
 
-      <input class="hcmode"
+  <span class="hc">Hardcore mód</span>
+  <input class="hcmode"
         type="checkbox"
         checked={hardMode}
         onChange={(e) => setIsHardMode(e.target.checked)}

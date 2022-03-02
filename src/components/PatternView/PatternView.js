@@ -157,7 +157,7 @@ export const PatternView = (props) => {
             </div>
             {!run && result === '' && (
                 <div className={cx("message")}>
-                    Nyomj 'Spacebar'-t az indításhoz
+                    Nyomd meg a <span class="gomb">Space</span> billentyűt az indításhoz
                 </div>
             )}
             {result !== '' && (
