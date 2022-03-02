@@ -1,1 +1,1 @@
-export { PatternView } from "./PatternView"
+export { PatternView } from "./PatternView";

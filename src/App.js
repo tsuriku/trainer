@@ -4,6 +4,6 @@ import { PatternView } from './components/PatternView';
 
 export const App = () => {
   return (
-      <PatternView maxTime={4000} />
+    <PatternView maxTime={4000} />
   );
 }
