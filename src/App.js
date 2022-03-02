@@ -1,20 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-// import axios from "axios";
-// import ThemeFormContainer from "containers/ThemeFormContainer";
-import { Route } from "react-router-dom";
-import {
-  ViakissKeyboardPattern
-} from "./pages";
+import { PatternView } from './components/PatternView';
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <Route path="/" component={ViakissKeyboardPattern} />
-      </>
-    );
-  }
+export const App = () => {
+  return (
+      <PatternView maxTime={4000} />
+  );
 }
-
-export default App;

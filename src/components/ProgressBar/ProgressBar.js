@@ -1,22 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "./ProgressBar.scss"
 import classnames from "classnames/bind"
 
 const cx = classnames.bind(styles)
 
-class ProgressBar extends Component {
-    static defaultProps = {
-        progress: 0,
-        max: 1,
-        text: null,
-    }
+export const ProgressBar = (props) => {
+    const { progress = 0, max = 1, text = null } = props;
 
-    render() {
-        const { progress, max, text } = this.props
-        const p = progress * 100 / max
-        const pt = text === null ? `${p}%` : text
+    const p = progress * 100 / max;
+    const pt = text === null ? `${p}%` : text;
 
-        return <div className={cx("progress-bar-wrap")}>
+    return (
+        <div className={cx("progress-bar-wrap")}>
             <div className={cx("progress")}
                 style={{
                     width: `${p}%`
@@ -24,7 +19,5 @@ class ProgressBar extends Component {
             </div>
             <div className={cx("text")}>{pt}</div>
         </div>
-    }
+    )
 }
-
-export default ProgressBar;

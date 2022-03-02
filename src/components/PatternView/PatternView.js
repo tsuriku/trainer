@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import { List, Record } from "immutable";
-import styles from "./PatternView.scss";
-import classnames from "classnames/bind";
-import ProgressBar from "../ProgressBar";
+import classnames from 'classnames/bind';
+import { List, Record } from 'immutable';
+import React, { Component } from 'react';
+
+import { ProgressBar } from '../ProgressBar';
+import styles from './PatternView.scss';
 
 const cx = classnames.bind(styles)
 
@@ -11,21 +12,15 @@ const PatternData = Record({
     state: "ready",
 })
 
-class PatternItem extends Component {
-    static defaultProps = {
-        item: {
-            text: "",
-            state: "ready",
-        }
-    }
+const PatternItem = (props) => {
+    const {
+        text = "",
+        state = "ready",
+    } = props;
 
-    render() {
-        const { text, state } = this.props.item
-
-        return <div className={cx("pattern", state)}>
-            {text}
-        </div>
-    }
+    return <div className={cx("pattern", state)}>
+        {text}
+    </div>
 }
 
 export class PatternView extends Component {
@@ -104,6 +99,7 @@ export class PatternView extends Component {
     handleResult = (clear) => {
         const { maxTime, onSuccess, onFailure } = this.props
         const { remainTime } = this.state
+
         if (clear) {
             onSuccess(maxTime - remainTime)
             this.setState({
@@ -223,7 +219,8 @@ export class PatternView extends Component {
         const list = items.map((item, index) => {
             return <PatternItem
                 key={index}
-                item={item}
+                text={item.text}
+                state={item.state}
             />
         })
         return list

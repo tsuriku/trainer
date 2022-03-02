@@ -1,13 +1,14 @@
+import './styles/base.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./styles/base.scss"
-import Root from './Root';
-import reportWebVitals from './reportWebVitals';
 
+import { App } from './App';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <App />
   </React.StrictMode>,
   document.getElementById('latrainer')
 );
