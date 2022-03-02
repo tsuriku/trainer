@@ -59,6 +59,12 @@ export const PatternView = (props) => {
         timeFlag.current = true
         clearInterval(timerAnimation.current);
     }, []);
+    
+    useEffect(() => {
+        if (run) {
+            stop();
+        }
+    }, [maxTime, stop, run]);
 
     const handleResult = useCallback((clear) => {
         if (clear) {
