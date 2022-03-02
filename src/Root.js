@@ -5,11 +5,7 @@ import store from "./store";
 import App from "./App.js"
 
 const Root = () => (
-    <BrowserRouter>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </BrowserRouter>
+    <App />
 )
 
 export default Root;
