@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { List, Record } from "immutable";
 import styles from "./PatternView.scss";
 import classnames from "classnames/bind";
-import ProgressBar from "../../ProgressBar";
+import ProgressBar from "../ProgressBar";
 
 const cx = classnames.bind(styles)
 
@@ -28,7 +28,7 @@ class PatternItem extends Component {
     }
 }
 
-class PatternView extends Component {
+export class PatternView extends Component {
     static defaultProps = {
         patterns: "QWEASD",
         textLength: 8,
@@ -233,14 +233,14 @@ class PatternView extends Component {
         const { run, result } = this.state
         if (!run && result === "") {
             return (<div className={cx("message")}>
-                Space 를 눌러 시작 해주세요
+                Nyomj 'Spacebar'-t az indításhoz
             </div>)
         }
 
         if (result !== "")
             return (<div className={cx("message", result)}>
-                {result === "success" && "성공!"}
-                {result === "failure" && "실패..."}
+                {result === "success" && "SIKER!"}
+                {result === "failure" && "SIKERTELEN..."}
             </div>)
 
         return null
@@ -258,11 +258,9 @@ class PatternView extends Component {
                 <ProgressBar
                     progress={maxTime - remainTime}
                     max={maxTime}
-                    text={`${((maxTime - remainTime) / 1000).toFixed(1)}초`} />
+                    text={`${((maxTime - remainTime) / 1000).toFixed(1)} mp.`} />
             </div>
             {this.renderMessage()}
         </div>
     }
 }
-
-export default PatternView;
