@@ -24,9 +24,10 @@ export const App = () => {
         value={textLength.toString()}
         onChange={(e) => setTextLength(parseInt(e.target.value))}
       >
-        <option value="6">Vykas[Normál/Nehéz]</option>
-        <option value="7">Oreha's Well[Normál]</option>
-        <option value="8">Oreha's Well[Nehéz]</option>
+        <option value="6">Normál</option>
+        <option value="7">Haladó</option>
+        <option value="8">Nehéz</option>
+        <option value="10">Extrém</option>
       </select>
     </>
   );
